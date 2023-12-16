@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+#left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    /* background-color: blue; */
+}
+#lnav{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#links{
+    display: flex;
+    align-items: center;
+}
+#links a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(32, 29, 29);
+}
+#links i{
+    color: red;
+}
+#left #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#text h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+#text p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+#text a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+#right{
+    height: 100%;
+    width: 60%;
+    /* background-color: green; */
+}
+#rtop{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    /* background-color: yellow; */
+}
+#leftrtop{
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+    background-image: url(https://cdn.pixabay.com/photo/2023/11/26/19/09/butterfly-8414148_1280.jpg);
+    background-position:bottom;
+    background-size:cover;
+}
+#rightrtop{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(135, 15, 209); */
+    background-image: url(https://cdn.pixabay.com/photo/2017/02/19/23/10/finger-2081169_1280.jpg);
+    background-size: cover;
+    background-position: top;
+}
+#rbuttom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/id/636208094/photo/tropical-jungle.jpg?s=2048x2048&w=is&k=20&c=MlaHtCKbmmQAzT5d0Z-Hs8gw_yjzEar-jwMoE85Nzj8=);
+    background-size: cover;
+}
+@media(250px<=width <=500px){
+  
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #right{
+        width: 100%;
+    }
+}
